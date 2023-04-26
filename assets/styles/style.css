@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #F5F5F5;
+  }
+
+  p {
+    color: #FFFF;
+  }
+  
+  header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+
+  }
+  
+  header h1 {
+    color: #4B6E65;
+    margin-right: 1rem;
+  }
+  
+  header h1:hover {
+    color: #3A5A54;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 1rem;
+  }
+  
+  nav ul li a {
+    color: #4B6E65;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #3A5A54;
+  }
+  
+  main {
+    margin-top: 0rem;
+  }
+  
+  section {
+    position: relative;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  }
+  
+  section:nth-child(odd) .content {
+    margin-left: 10%;
+    text-align: left;
+    
+  }
+  
+  section:nth-child(even) .content {
+    margin-left: 40%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  }
+  
+  h2, h3 {
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .bg-image:nth-child(1) {
+    background-image: url('/assets/images/warehouse.jpg');
+    /* transition: 3s; */
+  }
+  
+  .bg-image:nth-child(2) {
+    background-image: url('/assets/images/lumping.jpg');
+    /* transition: 3s; */
+  }
+  
+  .bg-image:nth-child(3) {
+    background-image: url('/assets/images/check.jpg');
+    /* transition: 3s; */
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .card-container p {
+    color: black;
+  }
+
+  .card-container h3 {
+    color: #3A5A54;
+  }
+
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 30%;
+    transition: 0.3s;
+  }
+
+  .content h2 {
+    text-align: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
+  .content {
+    background-color: #000000bd ;
+    text-align: center;
+  }
+
+  label {
+    color: #ffffff;
+  }
+  
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #4B6E65;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3A5A54;
+  }
+  
+  footer {
+    background-color: #4B6E65;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
