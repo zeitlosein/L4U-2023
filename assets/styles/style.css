@@ -4,17 +4,70 @@
     box-sizing: border-box;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 808px) {
+   
+    
     .card-container {
+      display: inline;
       flex-direction: column;
       align-items: center;
+      width: 100%;
+      height: auto;
+      padding: 2px;
+    }
+  
+    #services .content {
+      margin: 2px;
+      width: 100%;
+      padding: 0 2rem; /* Add some horizontal padding to avoid content being squeezed at the edges */
     }
   
     .card {
-      width: 80%;
-      margin-bottom: 2rem; /* Add some space between the cards */
+      width: 100%; /* Set card width to 100% for mobile view */
+      margin-bottom: 2rem;
+      text-align: center;
+      padding-right: 55px;
+      font-size: 1rem;
     }
+
+   
   }
+
+
+  @media (max-width: 620px) {
+   
+    
+    .card-container {
+      display: relative;
+      flex-direction: none;
+      align-items: center;
+      width: 100%;
+      height: auto;
+ 
+      padding: 2px;
+    }
+  
+    #services .content {
+
+      margin: 2px;
+ 
+      width: 100%;
+      padding: 0 2rem; /* Add some horizontal padding to avoid content being squeezed at the edges */
+    }
+  
+    .card {
+      width: 100%; /* Set card width to 100% for mobile view */
+      margin-bottom: 2rem;
+ 
+      text-align: center;
+      padding-right: 55px;
+      font-size: 1rem;
+    }
+
+   
+  }
+
+
 
 
   body {
@@ -101,10 +154,23 @@
   .bg-image {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center ;
+   
+  }
+
+  .bg-about {
+    background-image: url('/assets/images/warehouse.jpg');
+  }
+
+  .bg-services {
+    background-image: url('/assets/images/lumping.jpg');
   }
   
-  .bg-image:nth-child(1) {
+  .bg-contact {
+    background-image: url('/assets/images/check.jpg');
+  }
+  
+  /* .bg-image:nth-child(1) {
     background-image: url('https://zeitlosein.github.io/L4U.github.io/assets/images/warehouse.jpg');
 }
 
@@ -115,7 +181,7 @@
 .bg-image:nth-child(3) {
     background-image: url('https://zeitlosein.github.io/L4U.github.io/assets/images/check.jpg');
 }
-  
+   */
   .card-container {
     display: flex;
     justify-content: space-between;
