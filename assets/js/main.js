@@ -17,7 +17,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
   
     sections.forEach((section, index) => {
       const nextImageIndex = (index + currentImageIndex) % imageNames.length;
-      section.style.backgroundImage = `url('/assets/images/${imageNames[nextImageIndex]}.jpg')`;
+      section.style.backgroundImage = `url('assets/images/${imageNames[nextImageIndex]}.jpg')`;
     });
   }, 10000);
   
