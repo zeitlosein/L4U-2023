@@ -4,6 +4,19 @@
     box-sizing: border-box;
   }
   
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+      margin-bottom: 2rem; /* Add some space between the cards */
+    }
+  }
+
+
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
