@@ -92,19 +92,16 @@
   }
   
   .bg-image:nth-child(1) {
-    background-image: url('/assets/images/warehouse.jpg');
-    /* transition: 3s; */
-  }
-  
-  .bg-image:nth-child(2) {
-    background-image: url('/assets/images/lumping.jpg');
-    /* transition: 3s; */
-  }
-  
-  .bg-image:nth-child(3) {
-    background-image: url('/assets/images/check.jpg');
-    /* transition: 3s; */
-  }
+    background-image: url('https://zeitlosein.github.io/L4U.github.io/assets/images/warehouse.jpg');
+}
+
+.bg-image:nth-child(2) {
+    background-image: url('https://zeitlosein.github.io/L4U.github.io/assets/images/lumping.jpg');
+}
+
+.bg-image:nth-child(3) {
+    background-image: url('https://zeitlosein.github.io/L4U.github.io/assets/images/check.jpg');
+}
   
   .card-container {
     display: flex;
