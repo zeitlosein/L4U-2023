@@ -92,7 +92,7 @@
   }
   
   .bg-image:nth-child(1) {
-    background-image: url('assets/images/warehouse.jpg');
+    background-image: url('/assets/images/warehouse.jpg');
     /* transition: 3s; */
   }
   
